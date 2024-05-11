@@ -8,7 +8,7 @@ export default function LatestArticle(props) {
       />
       <div className="articleContent">
         <p className="writerName">{props.item.writer}</p>
-        <h3 className="articleTitle">{props.item.title}</h3>
+        <a href="#" className="articleLink"><h3 className="articleTitle">{props.item.title}</h3></a>
         <p className="articleDescription">{props.item.description}</p>
       </div>
     </div>

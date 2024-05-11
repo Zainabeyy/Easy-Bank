@@ -132,6 +132,13 @@ header .headerInviteButton {
   border-radius: 8px;
   overflow: hidden;
 }
+.articleContent .articleLink:is(:hover,:focus) > .articleTitle{
+  color: #31d35c;
+  text-decoration: none;
+}
+.articleContent .articleLink{
+  text-decoration: none;
+}
 
 /*     footer styling    */
 
