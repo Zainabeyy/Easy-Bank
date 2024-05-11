@@ -1,0 +1,333 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+:root {
+  --DarkBlue: hsl(233, 26%, 24%);
+  --LimeGreen: hsl(136, 65%, 51%);
+  --BrightCyan: hsl(192, 70%, 51%);
+  --GrayishBlue: hsl(233, 8%, 62%);
+  --LightGrayishBlue: hsl(220, 16%, 96%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
+}
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.125rem;
+  text-align: center;
+}
+h1,
+h2,
+h3 {
+  color: var(--DarkBlue);
+  font-weight: 400;
+}
+p {
+  font-size: 0.9rem;
+  line-height: 1.37rem;
+  color: var(--GrayishBlue);
+}
+h2 {
+  font-size: 1.9rem;
+}
+
+/*    request invite button     */
+
+.requestInvite {
+  color: #fafafa;
+  font-weight: 700;
+  background-image: linear-gradient(90deg, #31d35c, #2bb7da);
+  border: none;
+  border-radius: 2rem;
+  width: 10rem;
+  padding: 0.9rem 0rem;
+  text-align: center;
+}
+.requestInvite:hover {
+  background-image: linear-gradient(90deg, #31d35cb0, #2bb7dab0);
+}
+.requestInvite:focus {
+  outline: 2px solid #cccaca;
+}
+
+/*  header styling */
+
+header {
+  background-color: var(--VeryLightGray);
+}
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 0rem 0rem 1rem;
+}
+.heading {
+  padding: 0rem 2rem;
+}
+img.mobiles {
+  position: absolute;
+  top: -4rem;
+  max-width: 375px;
+  height: auto;
+}
+.headerImages {
+  height: 380px;
+  overflow: hidden;
+  float: right;
+}
+header .headerInviteButton {
+  margin: 2rem 0rem 3.5rem;
+}
+.nowrap {
+  white-space: nowrap;
+}
+
+/*  benefits styling  */
+
+.benefitsSection {
+  background-color: var(--LightGrayishBlue);
+  padding: 3.5rem 1.5rem;
+}
+.WhyChooseParagraph {
+  margin: 1rem 0rem 2rem;
+}
+.benefitImage {
+  margin: 1.7rem 0rem;
+}
+.benefitDescription {
+  margin: 1rem 0rem 0.5rem;
+}
+
+/*    article styling     */
+
+.articleSection {
+  padding: 3.5rem 10%;
+}
+.articles {
+  text-align: left;
+}
+.articles .writerName {
+  font-size: 0.65rem;
+}
+.articleImage {
+  width: 100%;
+  height: auto;
+}
+.articleContent {
+  margin: 1.3rem 1.5rem;
+}
+.articleTitle {
+  font-size: 1.1rem;
+  margin: 0.5rem 0rem;
+}
+.articleDescription {
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+.article {
+  margin: 2rem 0rem;
+  box-shadow: 0px 0px 29px -1px #0000001c;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/*     footer styling    */
+
+footer {
+  background-color: var(--DarkBlue);
+  color: var(--VeryLightGray);
+  padding: 2.9rem 0rem;
+}
+ul.footerLinkes li {
+  list-style: none;
+  padding-left: 0rem;
+  margin: 0.9rem 0rem;
+  font-size: 0.9rem;
+  color: var(--LightGrayishBlue);
+  font-weight: 300;
+}
+.footerInviteButton {
+  margin: 1.3rem 0rem;
+}
+small {
+  font-size: 0.9rem;
+}
+.appIcons img {
+  margin: 1.3rem 0.5rem;
+}
+
+/*    medium screen size    */
+
+@media only screen and (min-width: 480px) {
+  /* header for medium screen size */
+
+  .headerBackgroundImage img {
+    width: 580px;
+    position: relative;
+    right: -8rem;
+    top: -7rem;
+  }
+  img.mobiles {
+    right: 1rem;
+    z-index: 5;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .articleSection {
+    padding: 3.5rem 2rem;
+  }
+  .articles {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .article {
+    width: 300px;
+  }
+  .articleImage:first-child {
+    height: 15.131rem;
+  }
+}
+
+/* large screen size */
+
+@media only screen and (min-width: 900px) {
+  body {
+    text-align: left;
+  }
+
+  /* header for large screen size */
+
+  .heading {
+    height: 375px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  header .headerInviteButton {
+    margin: 2rem 0rem 0rem;
+  }
+
+  /* benfit for large screen size */
+
+  .benefits {
+    display: flex;
+    gap: 1rem;
+  }
+  .WhyChooseParagraph {
+    width: auto;
+  }
+
+  .articles {
+    justify-content: space-between;
+  }
+
+  /* footer styling for large screen  */
+
+  footer{
+    padding:3.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  ul.footerLinkes{
+    columns: 2;
+  }
+  ul.footerLinkes li{
+    margin-top: 0rem;
+    margin-right: 5rem;
+  }
+  footer div:last-child{
+    text-align: right;
+  }
+  .footerInviteButton{
+    margin-top: 0rem;
+  }
+}
+
+/* larger screen size */
+
+@media only screen and (min-width: 1100px) {
+  /* header for larger screen size */
+
+  .heading {
+    padding: 0rem 0rem 0rem 7.5rem;
+    width: 500px;
+    height: 500px;
+  }
+  .heading h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+  img.mobiles {
+    max-width: 600px;
+    height: auto;
+    top: -5rem;
+    right: -6rem;
+  }
+  picture.headerBackgroundImage img {
+    width: 890px;
+    height: auto;
+    top: -11rem;
+    right: -16rem;
+  }
+  div.headerImages {
+    height: auto;
+    float: right;
+    position: absolute;
+    right: 0;
+  }
+
+  /* benfit for larger screen size */
+
+  .benefitsSection {
+    padding: 8rem 7.5rem;
+  }
+  .benefits {
+    gap: 1.5rem;
+  }
+  .benefitDescription {
+    font-size: 0.985rem;
+  }
+
+  .articleSection {
+    padding: 7rem 7.5rem;
+  }
+  .articleDescription {
+    font-size: 0.985rem;
+  }
+
+  footer{
+    padding: 3.5rem 7rem;
+  }
+  ul.footerLinkes li{
+    margin-right: 7rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .heading {
+    padding: 0rem 0rem 0rem 10rem;
+  }
+  img.mobiles {
+    max-width: 700px;
+    top: -6rem;
+    right: -7rem;
+  }
+  picture.headerBackgroundImage img {
+    width: 1000px;
+  }
+  .heading {
+    height: 590px;
+  }
+
+  .benefitsSection {
+    padding: 8rem 10rem;
+  }
+}
