@@ -13,7 +13,6 @@ export default function Nav() {
       setMenuClass("menu hidden");
     }
     setOpen(!isOpened);
-    console.log(isOpened);
   }
   return (
     <div className="nav">
